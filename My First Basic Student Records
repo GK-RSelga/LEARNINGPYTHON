@@ -1,0 +1,57 @@
+data = [] # nagcreate ako ng empty list at ang variable ko ay tinawag kong 'data' 
+import colorama
+colorama.init()
+
+print(colorama.Fore.GREEN + "\n=== Enter Student Names === " + colorama.Style.RESET_ALL) # nagreate print ako na title na 'Enter Student Names' gamit ang '\n' para ma display ko siya
+
+for x in range(1, 4): # dito gumamit ako ng for 'x' para sa range ko na 1 hanggang 4 para sa tatlong students
+    student_list = input(f"Enter the name of the student {x}: ") # nag create ako ng f string ko para ma formatted ko as expression si 'x'
+    data. append(student_list) # nag append ako kay 'student list' pra ma add yung mga input name of student ko
+    
+print("\nList of Students: ") # gumamit ako ng '\n' para maisingit ko yun 'List of Students:' bago nya ma i enumerate yung mga name of students ko
+for student_list in data: # gumamit ako ng 'for' para mgcreate ng loop para ma iterate sa display ko yung name ng students ko.
+    print(f"- {student_list}")
+
+
+print(colorama.Fore.GREEN + "\n=== Enter Grades for Each Students === " + colorama.Style.RESET_ALL)  # nagreate print ako na title na 'Enter Grades for Each Students' gamit ang '\n' para ma display ko siya
+def enter_grades(student_name): # gumamit ako def function para ma enter ko yung grades sa bawat student
+    print(f"Enter Grades for {student_name}:") # para ma malagay sa display yung grades ng students ko  
+    math_grade = int(input("Math grade: ")) # nag gamit ako ng 'int' para ma convert ko yung input sa integer
+    science_grade = int(input("Science grade: "))
+    history_grade = int(input("History grade: "))
+    return (math_grade, science_grade, history_grade) # nag gamit ako ng return para maging tuple si grades ko
+
+students = ['John', 'Paul', 'George'] # nagcreate ako ng student list
+grades_tuple_dict = {} # gumamit ako ng empty dictionary para ma store yung grades 
+
+for student in students: # para ma loop ko yung sa each students sa pag enter ng grades
+    grades_tuple_dict[student] = enter_grades(student) # para mapag sama ko sa dictionary ko yung mga store grades
+
+print("\nSample Grades for Each Student:") # nagprint ako na title header using '\n'
+for student, grades_tuple in grades_tuple_dict.items(): #para ma loop sa dictionary para ma display yung grades ng bawat students
+    math, science, history = grades_tuple # para ma assign ko yung values sa math, science, history
+    print(f"{student}: Math: {math}, Science: {science}, History: {history}") # para ma print si grades as f string
+
+
+student_records = { # gumamit ako ng student records as variable ko to create a dictionary using {}
+    "John": (75, 76, 77),    
+    "Paul": (78, 79, 80),      
+    "George": (79, 78, 77)}
+
+print("Student Records:") # nag print ako ng mga table header ko
+print("Student Name   Math Science History")            
+print("-----------------------------------")
+
+for name, grades in student_records.items(): # nag gamit ako ng '.items()' sa dictionary ko para ma loop ko yung student name at grades sa student records ko
+    print(f"{name:<15} {grades[0]:<5} {grades[1]:<5} {grades[2]}")  # naglagay ako ng spacing para sa column ko
+
+
+unique_subjects = set() # gumamit ako ng 'set' para ma store yung mga unique subjects
+print(colorama.Fore.GREEN + "\n=== Enter Unique Subjects === " + colorama.Style.RESET_ALL) # nag gamit ako \n para sa title header ko 
+for x in range(1, 4): # gumamit ako ng for 'x' in range para sa tatlong subjects
+    subject = input(f"Enter subject {x}: ")
+    unique_subjects.add(subject) # gumamit ako ng 'add' para sa set ko para ma add yung mga subject
+
+print(colorama.Fore.GREEN + "\nUnique Subjects Offered:" + colorama.Style.RESET_ALL) # nag gamit ako ng \n para sa title header ko
+for subject in unique_subjects: # nag iterate ako para sa set para ma print ko yung unique subject
+    print(f"- {subject}")    

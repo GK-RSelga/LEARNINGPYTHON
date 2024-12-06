@@ -5,6 +5,40 @@ import colorama
 colorama.init()
 # Print using colorama for the header of student names
 print(colorama.Fore.GREEN + "\n=== Enter Student Names === " + colorama.Style.RESET_ALL)
-# Using For loops to input the names of the student
+# Using For loops to input the names of the students
 for x in range(1, 4):
-    # Prompt
+    # Prompt the user to enter the names of the students
+    student_name = input(f"Enter the name of the student {x}: ")
+    # Append the students name to the list
+    student_list. append(student_name)
+# Print header for student list
+print("\nList of Students: ")
+# Using For Loops for the list of the students with their index that will start=1
+for index, student_name in enumerate(student_list, start=1):
+    # Print the student names with their index
+    print(f"{index}. {student_name}")
+# Print using colorama for the header of the grades of each students
+print(colorama. Fore.GREEN + "\n=== Enter Grades for Each Students === " + colorama.Style.RESET_ALL)
+# Define a function to input student grades
+def enter_grades(student_name):
+    # Print header of enter grades for student
+    print(f"Enter Grades for {student_name}:")
+    # Using While True Loop (try, except) until the input grades is valid
+    While True:
+        try:
+            # Prompt user to enter the grades for each subjects
+            math_grade = float(input("Math grade: "))
+            science_grade = float(input("Science grade: "))
+            history_grade = float(input("History grade: "))
+            # To calculate the average grade of the 3 subjects
+            average = (math_grade + science_grade + history_grade) / 3
+            # Print the average grade by rounding with 2 decimal places
+            print("Average:", (round(average,2)))
+            print("")
+            # To return the grades as tuples
+            return (math_grade, science_grade, history_grade)
+        # For invalid input of non numerical values
+        except ValueError:
+            print("Invalid input.")
+            print("Please enter numerical grades only. Try again.")
+# Import tabulate for the table

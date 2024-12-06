@@ -24,7 +24,7 @@ def enter_grades(student_name):
     # Print header of enter grades for student
     print(f"Enter Grades for {student_name}:")
     # Using While True Loop (try, except) until the input grades is valid
-    While True:
+    while True:
         try:
             # Prompt user to enter the grades for each subjects
             math_grade = float(input("Math grade: "))

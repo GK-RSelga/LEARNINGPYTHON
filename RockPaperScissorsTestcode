@@ -1,4 +1,4 @@
-'''Activity 2 - Write a Python program that allows two players to play Rock, Paper, Scissors.
+'''Activity 1- Write a Python program that allows two players to play Rock, Paper, Scissors.
 The program should prompt each player to enter their choice (rock, paper, or scissors)
 and then determine the winner based on the game rules. Rock beats scissors, scissors
 beats paper, and paper beats rock. The program should display the result and declare the

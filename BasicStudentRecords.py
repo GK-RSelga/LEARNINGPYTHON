@@ -32,10 +32,6 @@ def enter_grades(student_name):
             math_grade = float(input("Math grade: "))
             science_grade = float(input("Science grade: "))
             history_grade = float(input("History grade: "))
-            # To calculate the average grade of the 3 subjects
-            average = (math_grade + science_grade + history_grade) / 3
-            # Print the average grade by rounding with 2 decimal places
-            print("Average:", (round(average,2)))
             print("")
             # To return the grades as tuples
             return (math_grade, science_grade, history_grade)
@@ -51,8 +47,10 @@ students_table = []
 for index, student_name in enumerate(student_list, start=1):
     # Enter each grades using the enter_grades function
     math_grade, science_grade, history_grade = enter_grades(student_name)
+    # To calculate the average grade of the 3 subjects
+    average = (math_grade + science_grade + history_grade) / 3
     # Append students name and grades (rounded by 2) to the table
-    students_table.append([index, student_name, (round(math_grade,2)), (round(science_grade,2)), (round(history_grade,2))])
+    students_table.append([index, student_name, (round(math_grade,2)), (round(science_grade,2)), (round(history_grade,2)), (round(average,2))])
 # Create headers or first row for the table
 headers = ["No.", "Student Name", "Math", "Science", "History"]
 # Print tables using tabulate

@@ -42,3 +42,33 @@ def enter_grades(student_name):
             print("Invalid input.")
             print("Please enter numerical grades only. Try again.")
 # Import tabulate for the table
+from tabulate import tabulate
+# Initialize an empty list [] to store the student names and grades on the student's table
+students_table = []
+# Using For Loops to the student list with their index which start=1
+for index, student_name in enumerate(student_list, start=1):
+    # Enter each grades using the enter_grades function
+    math_grade, science_grade, history_grade = enter_grades(student_name)
+    # Append students name and grades to the table
+    students_table.append([index, student_name, math_grade, science_grade, history_grade])
+# Create headers or first row for the table
+headers = ["No.", "Student Name", "Math", "Science", "History"]
+# Print tables using tabulate
+print(tabulate(students_table, headers=headers, tablefmt="fancy_grid"))
+# Initialize an empty set() to store unique subjects
+unique_subjects = set()
+# Print using colorama for the header of unique subjects
+print(colorama.Fore.GREEN + "\n=== Enter Unique Subjects === " + colorama.Style.RESET_ALL)
+# Using For Loops to input the unique subjects
+for x in range(1, 4):
+    # Ask the user to input unique subjects
+    subject = input(f"Enter Subject {x}: ")
+    # Using add to add the subjects to the sets
+    unique_subjects.add(subject)
+# Print using colorama for the header unique subjects offered
+print(colorama.Fore.GREEN + "\nUnique Subjects Offered:" + colorama.Style.RESET_ALL)
+# To loop to the set of unique subjects
+for subject in unique_subjects:
+    # Print each unique subjects offered
+    print(f"- {subject}")
+

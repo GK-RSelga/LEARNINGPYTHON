@@ -9,6 +9,8 @@ print(colorama.Fore.GREEN + "\n=== Enter Student Names === " + colorama.Style.RE
 for x in range(1, 4):
     # Prompt the user to enter the names of the students
     student_name = input(f"Enter the name of the student {x}: ")
+    # Convert the student's name to title case
+    student_name = student_name.title()
     # Append the students name to the list
     student_list. append(student_name)
 # Print header for student list
@@ -49,8 +51,8 @@ students_table = []
 for index, student_name in enumerate(student_list, start=1):
     # Enter each grades using the enter_grades function
     math_grade, science_grade, history_grade = enter_grades(student_name)
-    # Append students name and grades to the table
-    students_table.append([index, student_name, math_grade, science_grade, history_grade])
+    # Append students name and grades (rounded by 2) to the table
+    students_table.append([index, student_name, (round(math_grade,2)), (round(science_grade,2)), (round(history_grade,2))])
 # Create headers or first row for the table
 headers = ["No.", "Student Name", "Math", "Science", "History"]
 # Print tables using tabulate

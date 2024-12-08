@@ -33,7 +33,7 @@ This project was created and developed using python code functions in order to m
 
 
 ## 🚀 About Me
-Currently, I am a student at GK Global Knowledge (www.gkphilippines.com) pursuing a Bachelor of Science in Information Systems (BSIS) with a specialization in Cybersecurity Track. I also work in Property Management as a Data Entry Specialist at Booth and Partners Inc., Philippines (www.boothandpartners.com)
+Currently, I am a student at GK Global Knowledge (www.gkphilippines.com) pursuing a Bachelor of Science in Information Systems (BSIS) with a specialization in Cybersecurity Track. I also work in Property Management as a Data Entry Specialist at Booth and Partners Inc., Philippines (www.boothandpartners.com).
 
 
 ## 🔗 Links

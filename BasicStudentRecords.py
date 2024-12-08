@@ -57,7 +57,7 @@ for index, student_name in enumerate(student_list, start=1):
     # Call each grades, average and result using the enter_grades function
     math_grade, science_grade, history_grade, average, result = enter_grades(student_name)
     # Append students name, grades (rounded by 2), average grade and result to the table
-    students_table.append([index, student_name, round(math_grade,2), round(science_grade,2), round(history_grade,2), average, result)])
+    students_table.append([index, student_name, round(math_grade,2), round(science_grade,2), round(history_grade,2), average, result])
 # Create headers or first row for the table
 headers = [colorama. Fore.GREEN + "No." + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Student Name" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Math" + colorama.Style.RESET_ALL,
            colorama. Fore.GREEN + "Science" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "History" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Average" + colorama.Style.RESET_ALL,

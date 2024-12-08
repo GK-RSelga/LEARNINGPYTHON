@@ -14,7 +14,7 @@ for x in range(1, 4):
     # Append the students name to the list
     student_list. append(student_name)
 # Print header for student list
-print("\nList of Students: ")
+print(colorama.Fore.GREEN + "\nList of Students: " + colorama.Style.RESET_ALL)
 # Using For Loops for the list of the students with their index that will start=1
 for index, student_name in enumerate(student_list, start=1):
     # Print the student names with their index
@@ -52,7 +52,8 @@ for index, student_name in enumerate(student_list, start=1):
     # Append students name, grades (rounded by 2) and average grade (rounded by 2) to the table
     students_table.append([index, student_name, round(math_grade,2), round(science_grade,2), round(history_grade,2), round(average,2)])
 # Create headers or first row for the table
-headers = ["No.", "Student Name", "Math", "Science", "History", "Average"]
+headers = [colorama. Fore.GREEN + "No." + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Student Name" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Math" + colorama.Style.RESET_ALL,
+           colorama. Fore.GREEN + "Science" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "History" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Average" + colorama.Style.RESET_ALL]
 # Print tables using tabulate
 print(tabulate(students_table, headers=headers, tablefmt="fancy_grid"))
 # Initialize an empty set() to store unique subjects

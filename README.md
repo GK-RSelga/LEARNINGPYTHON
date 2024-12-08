@@ -27,8 +27,7 @@ This project was created and developed using python code functions in order to m
 ## Instructions on How to Run the Program
 Open the installed Visual Studio Code, Make sure that the Python is already set up in Visual Studio Code and the extension was already installed.
 Please open the file or press CTRL + O from your Visual Studio Code and select the .py Student Records file. For further demonstration see the provided demo links.
-- https://docs.google.com/presentation/d/1dr0sG9_POr9pCeYf66V2WO9bVxEZDCe1OE3NungJrVI/edit?usp=sharing
-- https://drive.google.com/file/d/1GzRGedKkwi1T_9mIUhCWmFLbL-Z2XW5J/view?usp=drive_link
+
 
 
 ## Limitations and Possible Future Improvements
@@ -69,5 +68,4 @@ Install my-project with:
     
 ## Demo
 
-- https://docs.google.com/presentation/d/1dr0sG9_POr9pCeYf66V2WO9bVxEZDCe1OE3NungJrVI/edit?usp=sharing
-- https://drive.google.com/file/d/1GzRGedKkwi1T_9mIUhCWmFLbL-Z2XW5J/view?usp=drive_link
+

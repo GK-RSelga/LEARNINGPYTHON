@@ -1,6 +1,8 @@
 
 # Student Records and Data Management System
 
+
+## Objective
 This project was created and developed using python code functions in order to manage the records of the students. It serves to create and store student information (name of the students, number of students, grades for each subject, average score, and unique subjects). It will help and assist the user in displaying and maintaining student records.
 
 
@@ -22,11 +24,16 @@ This project was created and developed using python code functions in order to m
  - Easy to Code
  - High-Level Programming Language
 
+## Instructions on How to Run the Program
+
+
+## Limitations and Possible Future Improvements
+
 
 
 
 ## 🚀 About Me
-I'm currently a student at GK Global Knowledge www.gkphilippines.com taking a course of BSIS - Cybersecurity Track. I also work as a Property Management - Data Entry Specialist at Booth and Partners Inc. Philippines www.boothandpartners.com
+Currently, I am a student at GK Global Knowledge (www.gkphilippines.com) pursuing a Bachelor of Science in Information Systems (BSIS) with a specialization in Cybersecurity Track. I also work in Property Management as a Data Entry Specialist at Booth and Partners Inc., Philippines (www.boothandpartners.com)
 
 
 ## 🔗 Links

@@ -33,8 +33,15 @@ def enter_grades(student_name):
             science_grade = float(input("Science grade: "))
             history_grade = float(input("History grade: "))
             print("")
+            # To calculate the average grade of the 3 subjects
+            average = (math_grade + science_grade + history_grade) / 3
+            # Use an If, else statement for the average passing score result
+            if average >= PASSING_SCORE:
+                result = "Pass"
+            else:
+                result = "Fail"
             # To return the grades as tuples
-            return (math_grade, science_grade, history_grade)
+            return (math_grade, science_grade, history_grade, round(average,2), result)
         # For invalid input of non numerical values
         except ValueError:
             print("Invalid input.")
@@ -45,15 +52,14 @@ from tabulate import tabulate
 students_table = []
 # Using For Loops to the student list with their index which start=1
 for index, student_name in enumerate(student_list, start=1):
-    # Enter each grades using the enter_grades function
-    math_grade, science_grade, history_grade = enter_grades(student_name)
-    # To calculate the average grade of the 3 subjects
-    average = (math_grade + science_grade + history_grade) / 3
-    # Append students name, grades (rounded by 2) and average grade (rounded by 2) to the table
-    students_table.append([index, student_name, round(math_grade,2), round(science_grade,2), round(history_grade,2), round(average,2)])
+    # Call each grades, average and result using the enter_grades function
+    math_grade, science_grade, history_grade, average, result = enter_grades(student_name)
+    # Append students name, grades (rounded by 2), average grade and result to the table
+    students_table.append([index, student_name, round(math_grade,2), round(science_grade,2), round(history_grade,2), average, result)])
 # Create headers or first row for the table
 headers = [colorama. Fore.GREEN + "No." + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Student Name" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Math" + colorama.Style.RESET_ALL,
-           colorama. Fore.GREEN + "Science" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "History" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Average" + colorama.Style.RESET_ALL]
+           colorama. Fore.GREEN + "Science" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "History" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Average" + colorama.Style.RESET_ALL],
+           colorama. Fore.GREEN + "Result" + colorama.Style.RESET_ALL]
 # Print tables using tabulate
 print(tabulate(students_table, headers=headers, tablefmt="fancy_grid"))
 # Initialize an empty set() to store unique subjects

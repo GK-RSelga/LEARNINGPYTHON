@@ -18,14 +18,6 @@ This project was created and developed using python code functions in order to m
 
 
 
-## Used By
-
-This project is used by the following:
-
-- Rowell A. Selga
-
-
-
 ## Features
 
  - Easy to Code
@@ -39,7 +31,8 @@ I'm currently a student at GK Global Knowledge www.gkphilippines.com taking a co
 
 
 ## 🔗 Links
-https://github.com/GK-RSelga
+- https://github.com/GK-RSelga
+- https://github.com/GK-RSelga/RSelgaPythonRepo
 
 ## Environment Variables
 

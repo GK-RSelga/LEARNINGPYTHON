@@ -40,7 +40,7 @@ def enter_grades(student_name):
                 result = "Pass"
             else:
                 result = "Fail"
-            # To return the grades as tuples
+            # To return the grades, average and result as tuples
             return (math_grade, science_grade, history_grade, round(average,2), result)
         # For invalid input of non numerical values
         except ValueError:

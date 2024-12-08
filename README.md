@@ -55,7 +55,6 @@ To run this project, you will need to add the following:
 Install my-project with:
 
  - https://www.python.org/
- - https://classroom.google.com/c/NzE0MjM1MjE3NDEx/a/NzE0MjM5MDMxNzMz/details
  - https://code.visualstudio.com/
  - py -m pip install colorama
  - pip install tabulate

@@ -12,7 +12,6 @@ This project was created and developed using python code functions in order to m
 - https://www.python.org/
 - https://code.visualstudio.com/
 - www.gkphilippines.com 
-- www.boothandpartners.com
 - https://www.facebook.com/altsysacademy
 
 

@@ -1,5 +1,5 @@
 
-# Student Records and Data Management system
+# Student Records and Data Management System
 
 This project was created and developed using python code functions in order to manage the records of the students. It serves to create and store student information (name of the students, number of students, grades for each subject, average score, and unique subjects). It will help and assist the user in displaying and maintaining student records.
 
@@ -66,5 +66,5 @@ Install my-project with:
     
 ## Demo
 
-
+- https://docs.google.com/presentation/d/1dr0sG9_POr9pCeYf66V2WO9bVxEZDCe1OE3NungJrVI/edit?usp=sharing
 - https://drive.google.com/file/d/1GzRGedKkwi1T_9mIUhCWmFLbL-Z2XW5J/view?usp=drive_link

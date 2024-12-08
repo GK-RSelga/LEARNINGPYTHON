@@ -19,6 +19,8 @@ print(colorama.Fore.GREEN + "\nList of Students: " + colorama.Style.RESET_ALL)
 for index, student_name in enumerate(student_list, start=1):
     # Print the student names with their index
     print(f"{index}. {student_name}")
+# Define the average passing score variable
+PASSING_SCORE: 75
 # Print using colorama for the header of the grades of each students
 print(colorama. Fore.GREEN + "\n=== Enter Grades for Each Students === " + colorama.Style.RESET_ALL)
 # Define a function to input student grades

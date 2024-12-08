@@ -58,7 +58,7 @@ for index, student_name in enumerate(student_list, start=1):
     students_table.append([index, student_name, round(math_grade,2), round(science_grade,2), round(history_grade,2), average, result)])
 # Create headers or first row for the table
 headers = [colorama. Fore.GREEN + "No." + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Student Name" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Math" + colorama.Style.RESET_ALL,
-           colorama. Fore.GREEN + "Science" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "History" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Average" + colorama.Style.RESET_ALL],
+           colorama. Fore.GREEN + "Science" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "History" + colorama.Style.RESET_ALL, colorama. Fore.GREEN + "Average" + colorama.Style.RESET_ALL,
            colorama. Fore.GREEN + "Result" + colorama.Style.RESET_ALL]
 # Print tables using tabulate
 print(tabulate(students_table, headers=headers, tablefmt="fancy_grid"))

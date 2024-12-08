@@ -32,8 +32,8 @@ Please download or copy the .py file on the Github repo, after the download, ope
 
 
 ## Limitations and Possible Future Improvements
-The program was limited in identifying if the student was passed or failed status. Possible future improvements can be focused on having student records dictionaries
-so that the management of data and information will be more efficient.
+The program's possible future improvements can focus on using student records as dictionaries or nested lists to
+enhance the efficiency of data and information management.
 
 
 

@@ -23,10 +23,11 @@ This project was created and developed using python code functions in order to m
 
  - Easy to Code
  - High-Level Programming Language
+ - User can store student name, grades, average score and results, and also unique subjects
 
 ## Instructions on How to Run the Program
 Open the installed Visual Studio Code, Make sure that the Python is already set up in Visual Studio Code and the extension was already installed.
-Please open the file or press CTRL + O from your Visual Studio Code and select the .py Student Records file. For further demonstration see the provided demo links.
+Please download or copy the .py file on the Github repo, after the download, open the file or press CTRL + O from your Visual Studio Code and select the .py Student Records file. For further demonstration see the provided demo links.
 
 
 

@@ -1,7 +1,2 @@
-https://www.python.org/
-
-https://code.visualstudio.com/
-
-py -m pip install colorama
-
-pip install tabulate
+colorama
+tabulate

@@ -31,6 +31,7 @@ This project was designed and developed using Python code functions to manage st
 ## Instructions on How to Run the Program
 Open the installed Visual Studio Code, make sure that the Python is already set up in Visual Studio Code and the extension was already installed.
 Please download or copy the (.py) file on the Github repo, after the download, open the file or press CTRL + O from your Visual Studio Code and select the (.py) Student Records file. For further demonstration see the provided demo links.
+- https://drive.google.com/file/d/1kc94GUBxdtT8IJlWa_p4UqWGJs8aUr9a/view?usp=sharing
 - https://docs.google.com/presentation/d/1dr0sG9_POr9pCeYf66V2WO9bVxEZDCe1OE3NungJrVI/edit?usp=sharing
 - https://drive.google.com/file/d/1hRy0EzNr2AiSINHWwJz2Y0LyEHh9Xf2a/view?usp=drive_link
 
@@ -70,6 +71,7 @@ Install my-project with:
 
     
 ## Demo
+- https://drive.google.com/file/d/1kc94GUBxdtT8IJlWa_p4UqWGJs8aUr9a/view?usp=sharing
 - https://docs.google.com/presentation/d/1dr0sG9_POr9pCeYf66V2WO9bVxEZDCe1OE3NungJrVI/edit?usp=sharing
 - https://drive.google.com/file/d/1hRy0EzNr2AiSINHWwJz2Y0LyEHh9Xf2a/view?usp=drive_link
 
